@@ -1,0 +1,86 @@
+html {
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    357deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(45, 37, 163, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: aliceblue;
+  font-size: medium;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* main {
+
+} */
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  align-self: center;
+  margin: auto auto;
+}
+
+.blocks {
+  flex: 1 0 200px;
+  padding: 10px;
+  text-align: center;
+  border-style: dashed;
+  border-width: 5px;
+  margin: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.blocks :hover,
+h2:hover {
+  box-shadow: inset 0px 0px 8px rgb(0, 225, 255), 0 0 15px rgb(0, 255, 200);
+}
+
+h2 {
+  border: 5 px solid darkred;
+  background-color: rgb(24, 18, 110);
+  box-align: center;
+  display: block;
+  position: relative;
+  margin-top: -20px;
+  padding: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.desc {
+  color: darkmagenta;
+  text-align: left;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.boxexample {
+  text-align: left;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+footer {
+  text-align: center;
+}
+
+footer ::after,
+footer ::before {
+  content: "\1FA78";
+  padding: 1rem;
+}
